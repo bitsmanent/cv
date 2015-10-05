@@ -20,6 +20,12 @@ To build only a specific language:
 $ make <language>
 ```
 
+Tip: to get a list of currently available languages, type:
+
+```
+$ ls *.tex |cut -d. -f1
+```
+
 Usage
 =====
 The build/ directory is created with the results, including PDFs.
