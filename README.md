@@ -14,7 +14,7 @@ To build the CV in all languages just type:
 $ make
 ```
 
-To build only a specific language:
+To build a specific language:
 
 ```
 $ make <language>
