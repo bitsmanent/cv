@@ -4,17 +4,19 @@ BUILD=build
 
 all: en it
 
-it:
-	@echo creating italian cv
+aux:
+	@echo building dependencies
 	@mkdir -p build
-	@cp it.aux build
-	@xelatex --output-directory=${BUILD} it.tex >/dev/null
+	@xelatex --no-pdf --output-directory=${BUILD} en.tex >/dev/null
 
-en:
+en: aux
 	@echo creating english cv
-	@mkdir -p build
-	@cp en.aux build
 	@xelatex --output-directory=${BUILD} en.tex >/dev/null
+
+it: aux
+	@echo creating italian cv
+	@cp ${BUILD}/en.aux ${BUILD}/it.aux
+	@xelatex --output-directory=${BUILD} it.tex >/dev/null
 
 clean:
 	@echo cleaning
