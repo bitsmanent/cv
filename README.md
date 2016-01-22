@@ -2,9 +2,6 @@ CV Claudio Alessi in LaTeX
 ==========================
 My curricula in different languages using the [Friggeri Resume CV](http://www.latextemplates.com/template/friggeri-resume-cv) class.
 
-For convenience, builds from latest version are made available. Check it out
-the [PDFs directory](PDFs).
-
 Requirements
 ============
 In order to build the CV you need the XeTeX suite.
