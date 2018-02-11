@@ -7,7 +7,7 @@ all: en it
 aux:
 	@echo building dependencies
 	@mkdir -p build
-	@xelatex --no-pdf --output-directory=${BUILD} en.tex >/dev/null
+	@xelatex --no-pdf --output-directory=${BUILD} en.tex
 
 en: aux
 	@echo creating english cv
