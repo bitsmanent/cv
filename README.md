@@ -4,7 +4,7 @@ My curricula in different languages using the [Friggeri Resume CV](http://www.la
 
 Requirements
 ============
-In order to build the CV you need the XeTeX suite and texlive-luatex.
+In order to build the CV you need the XeTeX suite and texlive-xetex.
 
 Build
 =====
